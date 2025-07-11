@@ -1,3 +1,4 @@
+/*VideoDemo*/
 /*Importing Google font*/
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
@@ -110,7 +111,7 @@ button:hover{
     position: absolute;
     top: 0;
     left: 0;
-    width: 15   0%;
+    width: 15%;
     height: 100%;
     border: none;
     border-radius: 20px;
