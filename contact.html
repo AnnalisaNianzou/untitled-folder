@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">ANNALISA'S BYTE  </div>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+            <a href="videoDemo.html">Video demonstration</a>
+            <a href="sitereport.html">Site report</a>
+        </div>
+       
+    </nav>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="column-left">
+                <h1>Contact Me</h1>
+            </div>
+            <div class="column-right">
+                <div class="contactbar">
+                <form action="mailto:annalisa.nianzou24@my.northampton.ac.uk" method="post" enctype="text/plain">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <Label for="email">Email</Label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message"> Send me a message </label><br>
+                <textarea name="message" id="message" rows="6" required></textarea><br><br>
+                <input type="submit" value="Submit">
+                </form>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        const toggleButton = document.querySelector('.menu-toggle');
+        const navItems = document.querySelector('.nav-items');
+
+        toggleButton.addEventListener('click',() => {
+            navItems.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
