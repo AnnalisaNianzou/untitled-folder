@@ -1,3 +1,4 @@
+/*VideoDemo*/
 /*Importing Google font*/
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
@@ -66,31 +67,6 @@ nav a {
     gap: 2rem;
 }
 
-
-.column-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color:#000;
-    max-width: 600px;
-    gap: 1.5rem;
-    flex: 1;
-    
-   
-}
-
-.column-left h1 {
-    margin-bottom:  1.5rem;
-    font-size: 3rem;
-}
-
-.column-left p{
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
 button{
     padding: 1rem 3rem;
     font-size: 1rem;
@@ -109,21 +85,39 @@ button:hover{
 
 }
 
-.column-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.video-section {
+    padding: 4rem 2rem;
+    background-color: #ec92d0;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.video-frame {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 56.25%;
+    border-radius: 20px;
+ 
+}
+
+.video-frame iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
    
 
 }
-
-.hero-image{
-    max-width: 100%;
-    height:auto;
-    max-width: 500px;
-
-}
-
 @media screen and (max-width: 768px){
   .hero-container{
       grid-template-columns: 1fr;
@@ -143,7 +137,17 @@ button:hover{
       height: auto;
   }
 }
+.video-frame{
+    text-align: center;
+    margin-top: 50px;
+}
 
+.video-frame iframe {
+    width: 700px;
+    height: 400px;
+    max-width: 900px;
+    border: none;
+}
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -254,6 +258,12 @@ button:hover{
     flex-wrap: wrap;
   }
 
+  .video-frame iframe {
+    width: 150%;
+    max-width: 900px;
+    height: 400px;
+    border: none;
+  }
 
 
 
